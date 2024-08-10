@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Andrew's Airport Transfers" />
+    <meta name="author" content="DynamicLayers" />
+
+    <title>Andrew's Airport Transfers</title>
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.png"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/keyframe-animation.css" />
+    <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/venobox.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/elements.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/slider.css" />
+    <link rel="stylesheet" href="assets/css/blog.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- External Libraries -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+    />
+
+    <style>
+      .quote-form {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f0f8ff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+      }
+      .tabs {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      .tab {
+        flex: 1 0 100%;
+        text-align: center;
+        padding: 10px;
+        background-color: #e6f2ff;
+        cursor: pointer;
+        border-radius: 5px 5px 0 0;
+        transition: background-color 0.3s;
+        margin-bottom: 5px;
+      }
+      .tab.active {
+        background-color: #007bff;
+        color: white;
+      }
+      .tab-content {
+        display: none;
+      }
+      .tab-content.active {
+        display: block;
+      }
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      .submit-btn {
+        width: 100%;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .submit-btn:hover {
+        background-color: #0056b3;
+      }
+      @media screen and (min-width: 768px) {
+        .tab {
+          flex: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p><!
+    [endif]-->
+
+    
+
+    <header class="main-header">
+      <div class="top-header">
+        <div class="container"></div>
+      </div>
+      <!--/.top-header-->
+      <div class="mid-header">
+        <div class="container">
+          <div class="mid-header-wrap">
+            <div class="site-logo">
+              <a href="index.html"
+                ><img src="assets/img/logo-dark.png" alt="Logo"
+              /></a>
+            </div>
+            <!--/.site-logo-->
+            <ul class="header-info">
+              <li>
+                <div class="header-info-icon">
+                  <i class="las la-phone-volume"></i>
+                </div>
+                <div class="header-info-text">
+                  <h3>
+                    <span>Call us now</span
+                    ><a href="tel:+61 413 331 147" style="color: #222"
+                      >+61 413 331 147</a
+                    >
+                  </h3>
+                </div>
+              </li>
+              <li>
+                <div class="header-info-icon">
+                  <i class="las la-envelope-open"></i>
+                </div>
+                <div class="header-info-text">
+                  <h3><span>Email now</span>book@aatqld.com</h3>
+                </div>
+              </li>
+              <li>
+                <div class="header-info-icon">
+                    <a href="https://www.facebook.com/profile.php?id=100063912549033" target="_blank"><i class="fab fa-facebook" style="color: #0000ff; font-size: 0.9em;"></i></a>
+                    <a href="https://www.instagram.com/andrewsairporttransfer" target="_blank"><i class="fab fa-instagram" style="color: #0000ff; font-size: 0.9em;"></i></a>
+                </div>
+                <div class="header-info-text">
+                    <h3><span>Follow us</span></h3>
+                </div>
+                </div>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--/.mid-header-->
+      <div class="nav-menu-wrapper">
+        <div class="container">
+          <div class="nav-menu-inner">
+            <div class="site-logo">
+              <a href="index.html"
+                ><img src="assets/img/logo-dark.png" alt="Logo"
+              /></a>
+            </div>
+            <!--/.site-logo-->
+            <div class="header-menu-wrap">
+              <ul class="nav-menu">
+                <li class="">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="">
+                  <a href="about-us.html">About Us</a>
+                </li>
+                <li class="">
+                  <a href="our-taxi.html">Our Fleet</a>
+                </li>
+
+                <li class="active">
+                  <a href="book-ride.html">Book a Ride</a>
+                </li>
+
+                <li><a href="contact.html">Contact</a></li>
+                <li class="">
+                  <a href="testimonials.html">Passenger Reviews</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+              <div class="burger-menu">
+                <div class="line-menu line-half first-line"></div>
+                <div class="line-menu"></div>
+                <div class="line-menu line-half last-line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/.nav-menu-->
+    </header>
+    <!--/.main-header-->
+
+    <div id="popup-search-box">
+      <div class="box-inner-wrap d-flex align-items-center">
+        <form id="form" action="" method="get" role="search">
+          <input
+            id="popup-search"
+            type="text"
+            name="s"
+            placeholder="Type keywords here..."
+          />
+          <button id="popup-search-button" type="submit" name="submit">
+            <i class="las la-search"></i>
+          </button>
+        </form>
+        <div class="search-close"><i class="las la-times"></i></div>
+      </div>
+    </div>
+    <!--/.popupsearch-box-->
+    <div id="searchbox-overlay"></div>
+
+    <div id="popup-sidebox" class="popup-sidebox">
+      <div class="sidebox-content">
+        <div class="site-logo">
+          <a href="index.html"
+            ><img src="assets/img/logo-light.png" alt="logo"
+          /></a>
+        </div>
+        <p>
+          Experience a seamless, comfortable, and exceptional journey with
+          Andrew's Airport Transfers. Let us make every mile memorable, ensuring
+          you arrive refreshed and inspired."
+        </p>
+        <ul class="sidebox-list">
+          <li class="call"><span>Call for ride:</span>+61 413 331 147</li>
+          <li><span>You can find us at:</span>Sidney, Australia</li>
+          <li><span>Email now:</span>inquiries@aatqld.com</li>
+        </ul>
+      </div>
+    </div>
+    <!--/.popup-sidebox-->
+    <div id="sidebox-overlay"></div>
+
+    <section class="page-header">
+      <div class="page-header-shape"></div>
+      <div class="container">
+        <div class="page-header-info">
+          <h4>Book Now</h4>
+          <h2>Book Your <span>Ride</span></h2>
+          <p>Everything your journey <br />needs is already here!</p>
+        </div>
+      </div>
+    </section>
+    <!--/.page-header-->
+
+
+
+<div class="taxi-booking bg-grey padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <form action="https://formspree.io/f/xblrdbdp" method="post">
+            <div class="taxi-booking-form">
+              <!-- Personal Information -->
+              <div class="form-field">
+                <i class="las la-user-tie"></i>
+                <input
+                  type="text"
+                  id="full-name"
+                  name="full-name"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <i class="las la-envelope-open"></i>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <i class="las la-phone"></i>
+                <input
+                  type="tel"
+                  id="contact-number"
+                  name="contact-number"
+                  class="form-control"
+                  placeholder="Contact Number"
+                  required
+                />
+              </div>
+
+              <!-- Booking Details -->
+              <div class="form-field">
+                <i class="las la-tags"></i>
+                <select
+                  name="service-type"
+                  id="service-type"
+                  class="niceSelect"
+                  required
+                >
+                  <option value="point-to-point">
+                    Point to Point Transfer
+                  </option>
+                  <option value="airport-transfer">Airport Transfer</option>
+                  <option value="hourly-package">Hourly Package</option>
+                  <option value="business-transfer">Business Transfer</option>
+                  <option value="special-occasion">
+                    Special Occasion Car Hire
+                  </option>
+                </select>
+              </div>
+
+              <!-- Location Details -->
+              <div class="form-field">
+                <i class="las la-map-marker"></i>
+                <input
+                  type="text"
+                  id="pickup-location"
+                  name="pickup-location"
+                  class="form-control"
+                  placeholder="Pickup Location"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <i class="las la-map-marker"></i>
+                <input
+                  type="text"
+                  id="dropoff-location"
+                  name="dropoff-location"
+                  class="form-control"
+                  placeholder="Drop-off Location"
+                />
+              </div>
+              <div class="form-field">
+                <i class="las la-calendar"></i>
+                <input
+                  type="text"
+                  id="ride-date"
+                  name="ride-date"
+                  class="form-control date-picker"
+                  placeholder="Select Date"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <i class="las la-clock"></i>
+                <input
+                  type="text"
+                  id="ride-time"
+                  name="ride-time"
+                  class="form-control time-picker"
+                  placeholder="Select Time"
+                  required
+                />
+              </div>
+
+              <!-- Vehicle Selection -->
+              <div class="form-field">
+                <i class="las la-car"></i>
+                <select
+                  name="vehicle-type"
+                  id="vehicle-type"
+                  class="niceSelect"
+                  required
+                >
+                  <option value="tesla-model-3">Tesla Model 3 (Sedan)</option>
+                  <option value="kia-ev-9">KIA EV 9 (SUV)</option>
+                  <option value="kia-carnival">KIA Carnival (Van)</option>
+                  <option value="hyundai-palisade">
+                    Hyundai Palisade (SUV)
+                  </option>
+                  <option value="toyota-kluger">Toyota Kluger (SUV)</option>
+                  <option value="toyota-camry">Toyota Camry (Sedan)</option>
+                </select>
+              </div>
+              <!-- Luggage Selection -->
+              <div class="form-field">
+                <i class="las la-suitcase"></i>
+                <select
+                  id="luggage"
+                  name="luggage"
+                  class="niceSelect"
+                  required
+                >
+                  <option value="">Select Luggage Option</option>
+                </select>
+              </div>
+                              <!-- Passenger Information -->
+                              <div class="form-field">
+                                <i class="las la-user-friends"></i>
+                                <select
+                                  name="adult-passengers"
+                                  id="adult-passengers"
+                                  class="niceSelect"
+                                  required
+                                >
+                                  <option value="1">1 Adult</option>
+                                  <option value="2">2 Adults</option>
+                                  <option value="3">3 Adults</option>
+                                  <option value="4">4 Adults</option>
+                                  <option value="5">5 Adults</option>
+                                  <option value="6">6 Adults</option>
+                                </select>
+                              </div>
+                              <div class="form-field">
+                                <i class="las la-child"></i>
+                                <select
+                                  name="child-passengers"
+                                  id="child-passengers"
+                                  class="niceSelect"
+                                  required
+                                >
+                                  <option value="0">0 Kids</option>
+                                  <option value="1">1 Kid</option>
+                                  <option value="2">2 Kids</option>
+                                  <option value="3">3 Kids</option>
+                                  <option value="4">4 Kids</option>
+                                  <option value="5">5 Kids</option>
+                                </select>
+                              </div>
+              
+                              <!-- Child Seat Options -->
+                              <div class="form-field">
+                                <i class="las la-baby-carriage"></i>
+                                <select
+                                  name="front-facing-child-seat"
+                                  id="front-facing-child-seat"
+                                  class="niceSelect"
+                                >
+                                  <option value="0">0 Front Facing Child Seats</option>
+                                  <option value="1">1 Front Facing Child Seat</option>
+                                  <option value="2">2 Front Facing Child Seats</option>
+                                  <option value="3">3 Front Facing Child Seats</option>
+                                </select>
+                              </div>
+                              <div class="form-field">
+                                <i class="las la-baby-carriage"></i>
+                                <select
+                                  name="rear-facing-child-seat"
+                                  id="rear-facing-child-seat"
+                                  class="niceSelect"
+                                >
+                                  <option value="0">0 Rear Facing Child Seats</option>
+                                  <option value="1">1 Rear Facing Child Seat</option>
+                                  <option value="2">2 Rear Facing Child Seats</option>
+                                  <option value="3">3 Rear Facing Child Seats</option>
+                                </select>
+                              </div>
+                              <div class="form-field">
+                                <i class="las la-chair"></i>
+                                <select
+                                  name="booster-seats"
+                                  id="booster-seats"
+                                  class="niceSelect"
+                                >
+                                  <option value="0">0 Booster Seats</option>
+                                  <option value="1">1 Booster Seat</option>
+                                  <option value="2">2 Booster Seats</option>
+                                  <option value="3">3 Booster Seats</option>
+                                </select>
+                              </div>
+              
+                              <!-- Additional Requirements -->
+                              <div class="form-field">
+                                <i class="las la-comment"></i>
+                                <textarea
+                                  id="special-instructions"
+                                  name="special-instructions"
+                                  class="form-control"
+                                  placeholder="Special Instructions"
+                                ></textarea>
+                              </div>
+              
+                              <!-- Payment Options -->
+                              <div class="form-field">
+                                <i class="las la-credit-card"></i>
+                                <select
+                                  name="payment-option"
+                                  id="payment-option"
+                                  class="niceSelect"
+                                  required
+                                >
+                                  <option value="">Select Payment Option</option>
+                                  <option value="credit-card">
+                                    Credit Card (Visa/Mastercard)
+                                  </option>
+                                  <option value="bank-transfer">Bank Transfer/Pay ID</option>
+                                </select>
+                              </div>
+              
+                              <!-- Submit Button -->
+                              <div class="form-field">
+                                <button id="submit" class="default-btn" type="submit">
+                                  Get a Quote
+                                </button>
+                              </div>
+                            </div>
+                            <div id="form-messages" class="alert" role="alert"></div>
+                          </form>
+                          <!-- Booking Form -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/.booking-form-->
+              
+                  <div class="booking-notice">
+                    <p>
+                      <strong
+                        >Book a return transfer at the time of this booking and get a 5%
+                        discount!</strong
+                      >
+                    </p>
+                    <p>
+                      Have any questions? <a href="contact.html">Get in touch with us</a>.
+                    </p>
+                  </div>
+              
+                  <footer class="footer-section">
+                    <div class="footer-top-wrap">
+                      <div class="container">
+                        <div class="footer-top">
+                          <div class="row align-items-end">
+                            <div class="col-lg-8">
+                              <div class="brand">
+                                <a class="footer-logo" href="index.html"
+                                  ><img src="assets/img/footer.png" alt="logo"
+                                /></a>
+                                <p>
+                                  At Andrew's Airport Transfers, we’re dedicated to providing
+                                  you with exceptional service and a seamless travel
+                                  experience. Your comfort and satisfaction are our highest
+                                  priorities. We look forward to serving you and wish you safe
+                                  and pleasant journeys.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="footer-call">
+                                <i class="las la-phone-volume"></i>
+                                <p>
+                                  <span>Call Us</span
+                                  ><a href="tel:+61 413 331 147">+61 413 331 147</a>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/.footer-top-wrap-->
+                    <div class="footer-mid-wrap">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-3 col-md-6 sm-padding">
+                            <div class="footer-item">
+                              <div class="widget-title">
+                                <h3>Working Hours</h3>
+                              </div>
+                              <ul class="footer-contact">
+                                <li><span></span>Available 24/7
+</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 sm-padding">
+                            <div class="footer-item footer-list"></div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 sm-padding">
+                            <div class="footer-item">
+                              <div class="widget-title"></div>
+                              <ul class="footer-contact">
+                                <li>
+                                  <span>Location:</span>Sunshine coast, Queensland Australia
+                                </li>
+                                <li><span>Join Us:</span>inquiries@aatqld.com</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 sm-padding">
+                            <div class="footer-item subscribe-wrap">
+                              <div class="widget-title">
+                                <h3>Newsletter Signup</h3>
+                              </div>
+                              <form action="#" class="subscribe-form">
+                                <input
+                                  class="form-control"
+                                  type="email"
+                                  name="email"
+                                  placeholder="Your Email"
+                                  required=""
+                                />
+                                <input
+                                  type="hidden"
+                                  name="action"
+                                  value="mailchimpsubscribe"
+                                />
+                                <button class="submit">Subscribe Now</button>
+                                <div class="clearfix"></div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="running-taxi">
+                        <div class="taxi"></div>
+                        <div class="taxi-2"></div>
+                        <div class="taxi-3"></div>
+                      </div>
+                    </div>
+                    <!--/.footer-mid-wrap-->
+                    <div class="copyright-wrap">
+                      <div class="container">
+                        <p>
+                          ©
+                          <span href="https://kevahwebsolutions.github.io/.co.ke/"></span>
+                          Kevah Web Developers
+                        </p>
+                      </div>
+                    </div>
+                    <!--/.copyright-wrap-->
+                  </footer>
+                  <!--/.footer-section-->
+              
+                  <div id="scrollup">
+                    <button id="scroll-top" class="scroll-to-top">
+                      <i class="las la-arrow-up"></i>
+                    </button>
+                  </div>
+                  <!--scrollup-->
+              
+                  <div class="dl-cursor">
+                    <div class="cursor-icon-holder"><i class="las la-times"></i></div>
+                  </div>
+                  <!--/.dl-cursor-->
+              
+                  <!--jQuery Lib-->
+                  <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+                  <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+                  <script src="assets/js/vendor/jquery.ajaxchimp.min.js"></script>
+                  <script src="assets/js/vendor/bootstrap.min.js"></script>
+                  <script src="assets/js/vendor/popper.min.js"></script>
+                  <script src="assets/js/vendor/swiper.min.js"></script>
+                  <script src="assets/js/vendor/jquery.datetimepicker.full.js"></script>
+                  <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+                  <script src="assets/js/vendor/venobox.min.js"></script>
+                  <script src="assets/js/vendor/smooth-scroll.js"></script>
+                  <script src="assets/js/vendor/wow.min.js"></script>
+                  <script src="assets/js/book-ride.js"></script>
+                  <script src="assets/js/main.js"></script>
+              <script>
+                document
+                  .querySelectorAll('input[name="payment-method"]')
+                  .forEach((elem) => {
+                    elem.addEventListener("change", function () {
+                      if (this.value === "card") {
+                        document.getElementById("card-details").style.display = "block";
+                      } else {
+                        document.getElementById("card-details").style.display = "none";
+                      }
+                    });
+                  });
+              </script>
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  const luggageOptions = {
+                    "tesla-model-3": [
+                      "2 Large Suitcases",
+                      "1 Medium Suitcase",
+                      "1 Small Suitcase",
+                    ],
+                    "kia-ev-9": [
+                      "4 Large Suitcases",
+                      "2 Medium Suitcases",
+                      "2 Small Suitcases",
+                    ],
+                    "kia-carnival": [
+                      "6 Large Suitcases",
+                      "4 Medium Suitcases",
+                      "4 Small Suitcases",
+                    ],
+                    "hyundai-palisade": [
+                      "5 Large Suitcases",
+                      "3 Medium Suitcases",
+                      "3 Small Suitcases",
+                    ],
+                    "toyota-kluger": [
+                      "4 Large Suitcases",
+                      "3 Medium Suitcases",
+                      "3 Small Suitcases",
+                    ],
+                    "toyota-camry": [
+                      "3 Large Suitcases",
+                      "2 Medium Suitcases",
+                      "2 Small Suitcases",
+                    ],
+                  };
+          
+                  const vehicleTypeElement = document.getElementById("vehicle-type");
+                  const luggageElement = document.getElementById("luggage");
+          
+                  function updateLuggageOptions() {
+                    const selectedVehicle = vehicleTypeElement.value;
+                    const options = luggageOptions[selectedVehicle] || [];
+          
+                    luggageElement.innerHTML = "";
+                    options.forEach((option) => {
+                      const newOption = document.createElement("option");
+                      newOption.value = option;
+                      newOption.textContent = option;
+                      luggageElement.appendChild(newOption);
+                    });
+                  }
+          
+                  vehicleTypeElement.addEventListener("change", updateLuggageOptions);
+                  updateLuggageOptions(); // Initial call to set options based on default selected vehicle
+                });
+              </script>
+            </body>
+          </html>
+          

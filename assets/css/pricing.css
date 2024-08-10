@@ -1,0 +1,71 @@
+/* Reset some default styles for better cross-browser consistency */
+body,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling for the section */
+#pricing-per-car {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.car-section {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.car-model {
+  font-size: 1.5rem;
+  color: #0000ff;
+  margin-bottom: 10px;
+}
+
+.car-details {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+strong {
+  color: #000000;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

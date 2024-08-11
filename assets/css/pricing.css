@@ -9,10 +9,9 @@ ul {
 
 /* Basic styling for the section */
 #pricing-per-car {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-  color: #333;
-  text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 .grid-container {

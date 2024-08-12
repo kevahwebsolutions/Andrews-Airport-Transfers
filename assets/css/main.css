@@ -2176,7 +2176,7 @@ textarea:-ms-input-placeholder {
   width: 110px;
   height: 40px;
   right: 0;
-  bottom: -12px;
+  bottom: -11px;
   animation: running-anim 20s linear infinite;
 }
 

@@ -2176,7 +2176,7 @@ textarea:-ms-input-placeholder {
   width: 110px;
   height: 40px;
   right: 0;
-  bottom: 0;
+  bottom: -12px;
   animation: running-anim 20s linear infinite;
 }
 
@@ -2189,7 +2189,7 @@ textarea:-ms-input-placeholder {
   width: 110px;
   height: 40px;
   right: 30%;
-  bottom: 0;
+  bottom: -12px;
   animation: running-anim 30s linear infinite;
 }
 
@@ -2202,7 +2202,7 @@ textarea:-ms-input-placeholder {
   width: 100px;
   height: 100px;
   right: 70%;
-  bottom: 0;
+  bottom: -5px;
   animation: running-anim-left 35s linear infinite;
 }
 
